@@ -392,7 +392,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: AtomRocket
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8924690857927584002, guid: 6ace0503f5f5e6e44831975f9aeed05d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ace0503f5f5e6e44831975f9aeed05d, type: 3}
 --- !u!1001 &2610369640559996408
 PrefabInstance:

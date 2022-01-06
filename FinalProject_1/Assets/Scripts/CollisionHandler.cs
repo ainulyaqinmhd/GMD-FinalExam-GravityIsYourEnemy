@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] float LevelLoadDelay = 2f;
+
     void OnCollisionEnter(Collision other) {
         switch (other.gameObject.tag){
             case "Friendly":
@@ -12,18 +14,21 @@ public class CollisionHandler : MonoBehaviour
                 break;
 
             case "Finish":
-                LoadNextLevel();
-                break;
-
-            case "Fuel":
-                Debug.Log("Fuel added to your energy");
+                StartSuccessSequence();
                 break;
 
             default:
-                Debug.Log("You are out of track!");
-                ReloadLevel();
+                StartCrashSequence();
                 break;
         }
+    }
+    void StartSuccessSequence(){
+        GetComponent <Movement>().enabled = false;
+        Invoke ("LoadNextLevel", LevelLoadDelay);
+    }
+    void StartCrashSequence(){
+        GetComponent <Movement>().enabled = false;
+        Invoke ("ReloadLevel", LevelLoadDelay);
     }
     void LoadNextLevel(){
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693621476018885663}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.7, z: 0}
+  m_LocalPosition: {x: 0, y: -0.6, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,9 +44,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 30
-  m_Range: 50
-  m_SpotAngle: 66
+  m_Intensity: 30.4
+  m_Range: 24.21
+  m_SpotAngle: 71
   m_InnerSpotAngle: 21
   m_CookieSize: 10
   m_Shadows:
@@ -700,6 +700,7 @@ GameObject:
   - component: {fileID: 1868033778}
   - component: {fileID: 1868033777}
   - component: {fileID: 1782495696}
+  - component: {fileID: 8441863512537314388}
   m_Layer: 0
   m_Name: AtomRocket
   m_TagString: Untagged
@@ -716,7 +717,7 @@ Transform:
   m_GameObject: {fileID: 8854619882081110099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.49619, y: 0.49619, z: 0.49619}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5249835682068019595}
@@ -897,6 +898,18 @@ MonoBehaviour:
   crash: {fileID: 8300000, guid: 4f2ef2cad2546430f90f889fed378ca2, type: 3}
   successParticles: {fileID: 6326796627417278627}
   crashParticles: {fileID: 8296454477301943787}
+--- !u!114 &8441863512537314388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854619882081110099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5daa19b5da4db5a4b01d128720929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8972606480291121315
 GameObject:
   m_ObjectHideFlags: 0

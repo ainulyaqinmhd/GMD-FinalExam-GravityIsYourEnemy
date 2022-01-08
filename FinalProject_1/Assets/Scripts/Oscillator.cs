@@ -13,13 +13,13 @@ public class Oscillator : MonoBehaviour
     void Start()
     {
      startingPosition = transform.position;
-     Debug.Log(startingPosition);   
+    //  Debug.Log(startingPosition);   
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (period == 0){ return; }
+        if (period <= Mathf.Epsilon){ return; }
         float cycles = Time.time/period; //continually growing over time
 
         const float tau = Mathf.PI * 2; //constant value of 6.2..

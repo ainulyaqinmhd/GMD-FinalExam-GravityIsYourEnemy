@@ -44,7 +44,7 @@
 - **Assets/**: Contains all game assets including scripts, scenes, and prefabs.
 - **ProjectSettings/**: Unity project settings.
 - **.gitignore**: Specifies files and folders to be ignored by Git.
-- **README.md**: Project documentation. ([README](https://en.wikipedia.org/wiki/README?utm_source=chatgpt.com), [Best PlayStation 5 Games Under 1 GB](https://gamerant.com/best-ps5-games-under-1-gb/?utm_source=chatgpt.com))
+- **README.md**: Project documentation. ([README](https://en.wikipedia.org/wiki/README?utm_source=chatgpt.com).
 
 ---
 

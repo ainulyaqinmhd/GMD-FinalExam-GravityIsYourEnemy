@@ -19,9 +19,18 @@
 ## 🚀 Features
 
 - **Dynamic Gravity Mechanics**: Experience levels where gravity changes direction, affecting movement and strategy.
-- **Challenging Levels**: Navigate through meticulously designed stages that test reflexes and problem-solving skills.
-- **Engaging Visuals**: Simple yet effective graphics that complement the game's mechanics.
+- **Challenging Levels**: Navigate through meticulously designed stages that test reflexes and problem-solving skills. The game includes 5 unique levels.
+- **Engaging Visuals and Audio**: Simple yet effective graphics complemented by immersive audio and particle effects.
 - **Responsive Controls**: Smooth and intuitive controls ensure a seamless gaming experience.
+- **Debug Features**: Includes debug keys for level skipping and collision toggling to aid testing.
+
+---
+
+## 🕹️ Gameplay Mechanics
+
+- **Movement**: Use the **Space** key to thrust upwards, and **A** and **D** keys to rotate the rocket left and right.
+- **Collision Handling**: Colliding with friendly objects allows safe navigation, reaching the finish triggers success sequences, and hitting obstacles triggers crash sequences with audio and particle feedback.
+- **Level Progression**: Successfully completing a level loads the next; crashing reloads the current level.
 
 ---
 
@@ -41,10 +50,16 @@
 
 ## 📁 Project Structure
 
-- **Assets/**: Contains all game assets including scripts, scenes, and prefabs.
-- **ProjectSettings/**: Unity project settings.
-- **.gitignore**: Specifies files and folders to be ignored by Git.
-- **README.md**: Project documentation. ([README](https://en.wikipedia.org/wiki/README?utm_source=chatgpt.com).
+- **Assets/**: Contains all game assets including:
+  - **Audio/**: Sound effects like rocket boost, explosions, and success chimes.
+  - **Materials/**: Visual materials and skyboxes for the game environment.
+  - **Particles/**: Particle effects for rocket thrust, explosions, and success.
+  - **Prefabs/**: Pre-configured game objects like the rocket, ground, walls, and landing pads.
+  - **Scenes/**: Unity scene files for the 5 game levels.
+  - **Scripts/**: C# scripts controlling game mechanics such as movement, collision handling, oscillation, and quitting the application.
+- **ProjectSettings/**: Unity project configuration files.
+- **Packages/**: Unity package manifest and lock files.
+- **UserSettings/**: User-specific Unity editor settings.
 
 ---
 
